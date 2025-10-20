@@ -4,7 +4,7 @@
 
 数字可以表示为不同基数的形式（如十进制5410，二进制102）。给定基数b和数字字符串dₙdₙ₋₁...d₁，其值计算公式为：
 
-\[ \sum_{i=1}^{n} b^{i-1} \cdot d_i \]
+$$\sum_{i=1}^{n} b^{i-1} \cdot d_i$$
 
 任意数可表示为基数b的int list形式（如11002 = [0,0,1,1]，5410 = [4,5]）
 
@@ -42,7 +42,7 @@ convert : int * int -> int list -> int list
 ```
 
 满足：
-\[ \text{toInt}_{b_2}(\text{convert}(b_1, b_2) L) = \text{toInt}_{b_1} L \]
+$$\text{toInt}_{b_2}(\text{convert}(b_1, b_2) L) = \text{toInt}_{b_1} L$$
 
 即实现任意基数b1到b2的转换，保持数值等价性
 
